@@ -5,8 +5,8 @@ public abstract class Machine {
     protected static final String DEFAULT_OWNER = "DEFAULT OWNER";
     protected String number;
     protected String owner;
-    protected void go () {};
-    protected void crash (){};
+    protected abstract void go ();
+    protected abstract void crash ();
 
     public Machine() {
         this.number = DEFAULT_NUMBER;
